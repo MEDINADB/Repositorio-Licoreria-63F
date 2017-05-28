@@ -7,18 +7,31 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using LiqourStore.Entities;
+using LiqourStore.Entities.IRepositories;
 using LiqourStore.Persistence;
 
 namespace LiqourStore.MVC.Controllers
 {
     public class MarcasController : Controller
     {
-        private LiqourStoreDbContext db = new LiqourStoreDbContext();
+        //  private LiqourStoreDbContext db = new LiqourStoreDbContext();
+        private readonly IUnityofWork _UnityOfWork;
+
+        public MarcasController(IUnityofWork unityOfWork)
+        {
+            _UnityOfWork = unityOfWork;
+        }
+
+        public MarcasController()
+        {
+
+        }
 
         // GET: Marcas
         public ActionResult Index()
         {
-            return View(db.Marcas.ToList());
+            // return View(db.Marcas.ToList());
+            return View(_UnityOfWork.Marca.GetAll());
         }
 
         // GET: Marcas/Details/5
@@ -28,7 +41,9 @@ namespace LiqourStore.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Marca marca = db.Marcas.Find(id);
+            //Marca marca = db.Marcas.Find(id);
+            Marca marca = _UnityOfWork.Marca.Get(id);
+
             if (marca == null)
             {
                 return HttpNotFound();
@@ -51,8 +66,12 @@ namespace LiqourStore.MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Marcas.Add(marca);
-                db.SaveChanges();
+                // db.Marcas.Add(marca);
+                _UnityOfWork.Marca.Add(marca);
+
+                //  db.SaveChanges();
+                _UnityOfWork.SaveChanges();
+
                 return RedirectToAction("Index");
             }
 
@@ -66,7 +85,9 @@ namespace LiqourStore.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Marca marca = db.Marcas.Find(id);
+            // Marca marca = db.Marcas.Find(id);
+            Marca marca = _UnityOfWork.Marca.Get(id);
+
             if (marca == null)
             {
                 return HttpNotFound();
@@ -83,8 +104,12 @@ namespace LiqourStore.MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(marca).State = EntityState.Modified;
-                db.SaveChanges();
+                //  db.Entry(marca).State = EntityState.Modified;
+                _UnityOfWork.StateModified(marca);
+
+                // db.SaveChanges();
+                _UnityOfWork.SaveChanges();
+
                 return RedirectToAction("Index");
             }
             return View(marca);
@@ -97,7 +122,9 @@ namespace LiqourStore.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Marca marca = db.Marcas.Find(id);
+            // Marca marca = db.Marcas.Find(id);
+            Marca marca = _UnityOfWork.Marca.Get(id);
+
             if (marca == null)
             {
                 return HttpNotFound();
@@ -110,9 +137,16 @@ namespace LiqourStore.MVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Marca marca = db.Marcas.Find(id);
-            db.Marcas.Remove(marca);
-            db.SaveChanges();
+            //  Marca marca = db.Marcas.Find(id);
+            Marca marca = _UnityOfWork.Marca.Get(id);
+
+            //  db.Marcas.Remove(marca);
+            _UnityOfWork.Marca.Delete(marca);
+
+            //  db.SaveChanges();
+
+            _UnityOfWork.SaveChanges();
+
             return RedirectToAction("Index");
         }
 
@@ -120,7 +154,8 @@ namespace LiqourStore.MVC.Controllers
         {
             if (disposing)
             {
-                db.Dispose();
+                //db.Dispose();
+                _UnityOfWork.Dispose();
             }
             base.Dispose(disposing);
         }

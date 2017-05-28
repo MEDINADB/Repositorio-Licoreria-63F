@@ -8,17 +8,30 @@ using System.Web;
 using System.Web.Mvc;
 using LiqourStore.Entities;
 using LiqourStore.Persistence;
+using LiqourStore.Entities.IRepositories;
 
 namespace LiqourStore.MVC.Controllers
 {
     public class ClientesController : Controller
     {
-        private LiqourStoreDbContext db = new LiqourStoreDbContext();
+        //private LiqourStoreDbContext db = new LiqourStoreDbContext();
 
+        private readonly IUnityofWork _UnityOfWork;
+
+        public ClientesController(IUnityofWork unityOfWork)
+        {
+            _UnityOfWork = unityOfWork;
+        }
+
+        public ClientesController()
+        {
+
+        }
         // GET: Clientes
         public ActionResult Index()
         {
-            return View(db.Clientes.ToList());
+            // return View(db.Clientes.ToList());
+            return View(_UnityOfWork.Cliente.GetAll());
         }
 
         // GET: Clientes/Details/5
@@ -28,7 +41,9 @@ namespace LiqourStore.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Cliente cliente = db.Clientes.Find(id);
+            //Cliente cliente = db.Clientes.Find(id);
+            Cliente cliente = _UnityOfWork.Cliente.Get(id);
+
             if (cliente == null)
             {
                 return HttpNotFound();
@@ -51,8 +66,12 @@ namespace LiqourStore.MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Clientes.Add(cliente);
-                db.SaveChanges();
+                //db.Clientes.Add(cliente);
+                _UnityOfWork.Cliente.Add(cliente);
+
+                // db.SaveChanges();
+                _UnityOfWork.SaveChanges();
+
                 return RedirectToAction("Index");
             }
 
@@ -66,7 +85,9 @@ namespace LiqourStore.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Cliente cliente = db.Clientes.Find(id);
+            // Cliente cliente = db.Clientes.Find(id);
+            Cliente cliente = _UnityOfWork.Cliente.Get(id);
+
             if (cliente == null)
             {
                 return HttpNotFound();
@@ -83,8 +104,12 @@ namespace LiqourStore.MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(cliente).State = EntityState.Modified;
-                db.SaveChanges();
+                //db.Entry(cliente).State = EntityState.Modified;
+                _UnityOfWork.StateModified(cliente);
+
+                //db.SaveChanges();
+                _UnityOfWork.SaveChanges();
+
                 return RedirectToAction("Index");
             }
             return View(cliente);
@@ -97,7 +122,9 @@ namespace LiqourStore.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Cliente cliente = db.Clientes.Find(id);
+            //Cliente cliente = db.Clientes.Find(id);
+            Cliente cliente = _UnityOfWork.Cliente.Get(id);
+
             if (cliente == null)
             {
                 return HttpNotFound();
@@ -110,9 +137,16 @@ namespace LiqourStore.MVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Cliente cliente = db.Clientes.Find(id);
-            db.Clientes.Remove(cliente);
-            db.SaveChanges();
+
+            //    Cliente cliente = db.Clientes.Find(id);
+            Cliente cliente = _UnityOfWork.Cliente.Get(id);
+
+            //    db.Clientes.Remove(cliente);
+            _UnityOfWork.Cliente.Delete(cliente);
+
+            //    db.SaveChanges();
+            _UnityOfWork.SaveChanges();
+
             return RedirectToAction("Index");
         }
 
@@ -120,7 +154,9 @@ namespace LiqourStore.MVC.Controllers
         {
             if (disposing)
             {
-                db.Dispose();
+                //db.Dispose();
+                _UnityOfWork.Dispose();
+
             }
             base.Dispose(disposing);
         }

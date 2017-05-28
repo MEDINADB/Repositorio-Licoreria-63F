@@ -14,7 +14,6 @@ namespace LiqourStore.Persistence.Repositories
         public CompraRepository(LiqourStoreDbContext context):base(context)
 		{
         }
-
         
     }
 }

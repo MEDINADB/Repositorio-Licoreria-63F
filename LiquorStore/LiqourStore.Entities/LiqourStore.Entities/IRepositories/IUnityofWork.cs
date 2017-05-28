@@ -16,13 +16,9 @@ namespace LiqourStore.Entities.IRepositories
         IProveedorRepository Proveedor { get; }
         ISucursalRepository Sucursal { get; }
         ITiendaRepository Tienda { get; }
-        //ITipoProductoRepository TipoProducto { get; }
-        //ITipoVentaRepository TipoVenta { get; }
         IVentaRepository Venta { get; }
 
         int SaveChanges();
-        void StateModified(Producto producto);
-        void StateModified();
-        void StateModified(Cliente cliente);
+        void StateModified(object Entity);
     }
 }

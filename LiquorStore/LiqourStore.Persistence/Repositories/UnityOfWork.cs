@@ -35,7 +35,7 @@ namespace LiqourStore.Persistence.Repositories
 
         public  IVentaRepository Venta { get; private set; }
 
-       public static UnityOfWork Instance { get; set; }
+       //public static UnityOfWork Instance { get; set; }
 
         public UnityOfWork()
         {
@@ -88,21 +88,6 @@ namespace LiqourStore.Persistence.Repositories
             _Context.Entry(Entity).State = System.Data.Entity.EntityState.Modified;
         }
 
-
-
-        public void StateModified(Producto producto)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void StateModified()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void StateModified(Cliente cliente)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

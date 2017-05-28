@@ -7,18 +7,32 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using LiqourStore.Entities;
+using LiqourStore.Entities.IRepositories;
 using LiqourStore.Persistence;
 
 namespace LiqourStore.MVC.Controllers
 {
     public class ProveedoresController : Controller
     {
-        private LiqourStoreDbContext db = new LiqourStoreDbContext();
+        //private LiqourStoreDbContext db = new LiqourStoreDbContext();
+        private readonly IUnityofWork _UnityOfWork;
+
+        public ProveedoresController(IUnityofWork unityOfWork)
+        {
+            _UnityOfWork = unityOfWork;
+        }
+
+        public ProveedoresController()
+        {
+
+        }
 
         // GET: Proveedores
         public ActionResult Index()
         {
-            return View(db.Proveedores.ToList());
+            //return View(db.Proveedores.ToList());
+            return View(_UnityOfWork.Proveedor.GetAll());
+
         }
 
         // GET: Proveedores/Details/5
@@ -28,7 +42,9 @@ namespace LiqourStore.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Proveedor proveedor = db.Proveedores.Find(id);
+            // Proveedor proveedor = db.Proveedores.Find(id);
+            Proveedor proveedor = _UnityOfWork.Proveedor.Get(id);
+
             if (proveedor == null)
             {
                 return HttpNotFound();
@@ -51,8 +67,12 @@ namespace LiqourStore.MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Proveedores.Add(proveedor);
-                db.SaveChanges();
+                // db.Proveedores.Add(proveedor);
+                _UnityOfWork.Proveedor.Add(proveedor);
+
+                // db.SaveChanges();
+                _UnityOfWork.SaveChanges();
+
                 return RedirectToAction("Index");
             }
 
@@ -66,7 +86,9 @@ namespace LiqourStore.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Proveedor proveedor = db.Proveedores.Find(id);
+            //Proveedor proveedor = db.Proveedores.Find(id);
+            Proveedor proveedor = _UnityOfWork.Proveedor.Get(id);
+
             if (proveedor == null)
             {
                 return HttpNotFound();
@@ -83,8 +105,12 @@ namespace LiqourStore.MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(proveedor).State = EntityState.Modified;
-                db.SaveChanges();
+                // db.Entry(proveedor).State = EntityState.Modified;
+                _UnityOfWork.StateModified(proveedor);
+
+                // db.SaveChanges();
+                _UnityOfWork.SaveChanges();
+
                 return RedirectToAction("Index");
             }
             return View(proveedor);
@@ -97,7 +123,9 @@ namespace LiqourStore.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Proveedor proveedor = db.Proveedores.Find(id);
+            // Proveedor proveedor = db.Proveedores.Find(id);
+            Proveedor proveedor = _UnityOfWork.Proveedor.Get(id);
+
             if (proveedor == null)
             {
                 return HttpNotFound();
@@ -110,9 +138,15 @@ namespace LiqourStore.MVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Proveedor proveedor = db.Proveedores.Find(id);
-            db.Proveedores.Remove(proveedor);
-            db.SaveChanges();
+            // Proveedor proveedor = db.Proveedores.Find(id);
+            Proveedor proveedor = _UnityOfWork.Proveedor.Get(id);
+
+            //  db.Proveedores.Remove(proveedor);
+            _UnityOfWork.Proveedor.Delete(proveedor);
+
+            // db.SaveChanges();
+            _UnityOfWork.SaveChanges();
+
             return RedirectToAction("Index");
         }
 
@@ -120,7 +154,9 @@ namespace LiqourStore.MVC.Controllers
         {
             if (disposing)
             {
-                db.Dispose();
+                // db.Dispose();
+                _UnityOfWork.Dispose();
+
             }
             base.Dispose(disposing);
         }

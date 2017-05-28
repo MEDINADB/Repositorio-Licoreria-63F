@@ -5,9 +5,12 @@ namespace LiqourStore.MVC.App_Start
 {
     using System;
     using System.Web;
+    using LiqourStore.Persistence.Repositories;
 
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 
+    using LiqourStore.Entities.IRepositories;
+    using LiqourStore.Persistence;
     using Ninject;
     using Ninject.Web.Common;
 
@@ -61,6 +64,21 @@ namespace LiqourStore.MVC.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            //UnityOfWork
+            kernel.Bind<IUnityofWork>().To<UnityOfWork>();
+
+            //iqourStoreDbContext
+            kernel.Bind<LiqourStoreDbContext>().To<LiqourStoreDbContext>();
+
+            //EmpleadoRepository
+            kernel.Bind<IClienteRepository>().To<ClienteRepository>();
+
+            //CompraRepository
+            kernel.Bind<ICompraRepository>().To<CompraRepository>();
+
+            //EmpleadoRepository
+            kernel.Bind<IEmpleadoRepository>().To<EmpleadoRepository>();
+            //
         }        
     }
 }

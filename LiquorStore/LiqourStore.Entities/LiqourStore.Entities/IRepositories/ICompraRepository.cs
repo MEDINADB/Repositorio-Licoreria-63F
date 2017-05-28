@@ -9,7 +9,5 @@ namespace LiqourStore.Entities.IRepositories
 {
    public  interface ICompraRepository : IRepository<Compra>
     {
-    
-
     }
 }

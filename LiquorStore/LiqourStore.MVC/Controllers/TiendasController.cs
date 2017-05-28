@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using LiqourStore.Entities.IRepositories;
 using LiqourStore.Entities;
 using LiqourStore.Persistence;
 
@@ -13,12 +14,25 @@ namespace LiqourStore.MVC.Controllers
 {
     public class TiendasController : Controller
     {
-        private LiqourStoreDbContext db = new LiqourStoreDbContext();
+        //  private LiqourStoreDbContext db = new LiqourStoreDbContext();
+        private readonly IUnityofWork _UnityOfWork;
+
+        public TiendasController(IUnityofWork unityOfWork)
+        {
+            _UnityOfWork = unityOfWork;
+        }
+
+        public TiendasController()
+        {
+
+        }
 
         // GET: Tiendas
         public ActionResult Index()
         {
-            return View(db.Tiendas.ToList());
+            // return View(db.Tiendas.ToList());
+            return View(_UnityOfWork.Tienda.GetAll());
+
         }
 
         // GET: Tiendas/Details/5
@@ -28,7 +42,9 @@ namespace LiqourStore.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Tienda tienda = db.Tiendas.Find(id);
+            // Tienda tienda = db.Tiendas.Find(id);
+            Tienda tienda = _UnityOfWork.Tienda.Get(id);
+
             if (tienda == null)
             {
                 return HttpNotFound();
@@ -51,8 +67,12 @@ namespace LiqourStore.MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Tiendas.Add(tienda);
-                db.SaveChanges();
+                // db.Tiendas.Add(tienda);
+                _UnityOfWork.Tienda.Add(tienda);
+
+                //  db.SaveChanges();
+                _UnityOfWork.SaveChanges();
+
                 return RedirectToAction("Index");
             }
 
@@ -66,7 +86,9 @@ namespace LiqourStore.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Tienda tienda = db.Tiendas.Find(id);
+            //   Tienda tienda = db.Tiendas.Find(id);
+            Tienda tienda = _UnityOfWork.Tienda.Get(id);
+
             if (tienda == null)
             {
                 return HttpNotFound();
@@ -83,8 +105,12 @@ namespace LiqourStore.MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(tienda).State = EntityState.Modified;
-                db.SaveChanges();
+                // db.Entry(tienda).State = EntityState.Modified;
+                _UnityOfWork.StateModified(tienda);
+
+                // db.SaveChanges();
+                _UnityOfWork.SaveChanges();
+
                 return RedirectToAction("Index");
             }
             return View(tienda);
@@ -97,7 +123,9 @@ namespace LiqourStore.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Tienda tienda = db.Tiendas.Find(id);
+            //Tienda tienda = db.Tiendas.Find(id);
+            Tienda tienda = _UnityOfWork.Tienda.Get(id);
+
             if (tienda == null)
             {
                 return HttpNotFound();
@@ -110,9 +138,16 @@ namespace LiqourStore.MVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Tienda tienda = db.Tiendas.Find(id);
-            db.Tiendas.Remove(tienda);
-            db.SaveChanges();
+            //  Tienda tienda = db.Tiendas.Find(id);
+            Tienda tienda = _UnityOfWork.Tienda.Get(id);
+
+            //  db.Tiendas.Remove(tienda);
+
+            _UnityOfWork.Tienda.Delete(tienda);
+
+            //  db.SaveChanges();
+            _UnityOfWork.SaveChanges();
+
             return RedirectToAction("Index");
         }
 
@@ -120,7 +155,9 @@ namespace LiqourStore.MVC.Controllers
         {
             if (disposing)
             {
-                db.Dispose();
+                //db.Dispose();
+                _UnityOfWork.Dispose();
+
             }
             base.Dispose(disposing);
         }

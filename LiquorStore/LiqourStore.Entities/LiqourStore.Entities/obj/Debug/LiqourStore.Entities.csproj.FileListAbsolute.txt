@@ -20,3 +20,4 @@ C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Entities\L
 C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\bin\Debug\LiqourStore.Entities.pdb
 C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\obj\Debug\LiqourStore.Entities.dll
 C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\obj\Debug\LiqourStore.Entities.pdb
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\obj\Debug\LiqourStore.Entities.csprojResolveAssemblyReference.cache

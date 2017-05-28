@@ -18,19 +18,14 @@ namespace LiqourStore.Persistence.Repositories
             _Context = context;
         }
 
-        public void Add(TEntity entity)
+        public void Delete(TEntity entity)
         {
-            _Context.Set<TEntity>().Add(entity);
+            _Context.Set<TEntity>().Remove(entity);
         }
 
-        public void AddRange(IEnumerable<TEntity> entities)
+        public void DeleteRange(IEnumerable<TEntity> entities)
         {
-            _Context.Set<TEntity>().AddRange(entities);
-        }
-
-        public IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
-        {
-            return _Context.Set<TEntity>().Where(predicate);
+            _Context.Set<TEntity>().RemoveRange(entities);
         }
 
         public TEntity Get(int? id)
@@ -43,24 +38,21 @@ namespace LiqourStore.Persistence.Repositories
             return _Context.Set<TEntity>().ToList();
         }
 
-        public void Remove(TEntity entity)
+        public IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
         {
-            _Context.Set<TEntity>().Remove(entity);
+            return _Context.Set<TEntity>().Where(predicate);
         }
 
-        public void RemoveRange(IEnumerable<TEntity> entities)
+        public void Add(TEntity entity)
         {
-            _Context.Set<TEntity>().RemoveRange(entities);
+            _Context.Set<TEntity>().Add(entity);
         }
 
-        public void Update(TEntity entity)
+        public void AddRange(IEnumerable<TEntity> entities)
         {
-            throw new NotImplementedException();
+            _Context.Set<TEntity>().AddRange(entities);
         }
 
-        public void UpdateRange(IEnumerable<TEntity> entities)
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }

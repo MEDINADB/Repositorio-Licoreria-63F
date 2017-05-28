@@ -53,8 +53,6 @@
     <Compile Include="IRepositories\IProveedorRepository.cs" />
     <Compile Include="IRepositories\ISucursalRepository.cs" />
     <Compile Include="IRepositories\ITiendaRepository.cs" />
-    <Compile Include="IRepositories\ITipoProductoRepository.cs" />
-    <Compile Include="IRepositories\ITipoVentaRepository.cs" />
     <Compile Include="IRepositories\IUnityofWork.cs" />
     <Compile Include="IRepositories\IVentaRepository.cs" />
     <Compile Include="IRepositories\Repository.cs" />

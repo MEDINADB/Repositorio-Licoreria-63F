@@ -7,18 +7,32 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using LiqourStore.Entities;
+using LiqourStore.Entities.IRepositories;
 using LiqourStore.Persistence;
 
 namespace LiqourStore.MVC.Controllers
 {
     public class ComprasController : Controller
     {
-        private LiqourStoreDbContext db = new LiqourStoreDbContext();
+        //private LiqourStoreDbContext db = new LiqourStoreDbContext();
+        private readonly IUnityofWork _UnityOfWork;
+
+        public ComprasController(IUnityofWork unityOfWork)
+        {
+            _UnityOfWork = unityOfWork;
+        }
+
+        public ComprasController()
+        {
+
+        }
 
         // GET: Compras
         public ActionResult Index()
         {
-            return View(db.Compras.ToList());
+            // return View(db.Compras.ToList());
+            return View(_UnityOfWork.Compra.GetAll());
+
         }
 
         // GET: Compras/Details/5
@@ -28,7 +42,9 @@ namespace LiqourStore.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Compra compra = db.Compras.Find(id);
+            //  Compra compra = db.Compras.Find(id);
+            Compra compra = _UnityOfWork.Compra.Get(id);
+
             if (compra == null)
             {
                 return HttpNotFound();
@@ -51,8 +67,12 @@ namespace LiqourStore.MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Compras.Add(compra);
-                db.SaveChanges();
+                //db.Compras.Add(compra);
+                _UnityOfWork.Compra.Add(compra);
+
+                // db.SaveChanges();
+                _UnityOfWork.SaveChanges();
+
                 return RedirectToAction("Index");
             }
 
@@ -66,7 +86,9 @@ namespace LiqourStore.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Compra compra = db.Compras.Find(id);
+            // Compra compra = db.Compras.Find(id);
+            Compra compra = _UnityOfWork.Compra.Get(id);
+
             if (compra == null)
             {
                 return HttpNotFound();
@@ -83,8 +105,12 @@ namespace LiqourStore.MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(compra).State = EntityState.Modified;
-                db.SaveChanges();
+                // db.Entry(compra).State = EntityState.Modified;
+                _UnityOfWork.StateModified(compra);
+
+                //  db.SaveChanges();
+                    _UnityOfWork.SaveChanges();
+
                 return RedirectToAction("Index");
             }
             return View(compra);
@@ -97,7 +123,9 @@ namespace LiqourStore.MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Compra compra = db.Compras.Find(id);
+            // Compra compra = db.Compras.Find(id);
+            Compra compra = _UnityOfWork.Compra.Get(id);
+
             if (compra == null)
             {
                 return HttpNotFound();
@@ -110,9 +138,16 @@ namespace LiqourStore.MVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Compra compra = db.Compras.Find(id);
-            db.Compras.Remove(compra);
-            db.SaveChanges();
+            // Compra compra = db.Compras.Find(id);
+            Compra compra = _UnityOfWork.Compra.Get(id);
+
+            // db.Compras.Remove(compra);
+            _UnityOfWork.Compra.Delete(compra);
+
+            //db.SaveChanges();
+            _UnityOfWork.SaveChanges();
+
+
             return RedirectToAction("Index");
         }
 
@@ -120,7 +155,9 @@ namespace LiqourStore.MVC.Controllers
         {
             if (disposing)
             {
-                db.Dispose();
+                // db.Dispose();
+                _UnityOfWork.Dispose();
+
             }
             base.Dispose(disposing);
         }

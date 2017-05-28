@@ -12,13 +12,9 @@ namespace LiqourStore.Persistence.Repositories
 {
     public class ClienteRepository : Repository<Cliente>, IClienteRepository
     {
-        public ClienteRepository(LiqourStoreDbContext context):base(context)
-		{
-        }
-
-        public void Delete(Cliente cliente)
+        public ClienteRepository(LiqourStoreDbContext context) : base(context)
         {
-            throw new NotImplementedException();
         }
     }
+       
 }

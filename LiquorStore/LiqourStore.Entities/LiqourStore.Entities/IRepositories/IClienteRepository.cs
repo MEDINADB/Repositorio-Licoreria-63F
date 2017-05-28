@@ -9,6 +9,6 @@ namespace LiqourStore.Entities.IRepositories
 {
     public interface IClienteRepository : IRepository<Cliente>
     {
-        void Delete(Cliente cliente);
+   
     }
 }

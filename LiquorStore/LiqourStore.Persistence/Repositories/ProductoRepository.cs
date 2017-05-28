@@ -14,9 +14,5 @@ namespace LiqourStore.Persistence.Repositories
 		{
         }
 
-        public void Delete(Producto producto)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
