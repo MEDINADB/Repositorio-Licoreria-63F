@@ -1,0 +1,71 @@
+C:\Users\LUIS ENRIQUE\Music\Documents\Visual Studio 2017\Projects\LiquorStore\LiqourStore.Persistence\obj\Debug\LiquorStore.Persistence.csprojResolveAssemblyReference.cache
+C:\Users\LUIS ENRIQUE\Music\Documents\Visual Studio 2017\Projects\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Persistence.dll.config
+C:\Users\LUIS ENRIQUE\Music\Documents\Visual Studio 2017\Projects\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Persistence.dll
+C:\Users\LUIS ENRIQUE\Music\Documents\Visual Studio 2017\Projects\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Persistence.pdb
+C:\Users\LUIS ENRIQUE\Music\Documents\Visual Studio 2017\Projects\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.dll
+C:\Users\LUIS ENRIQUE\Music\Documents\Visual Studio 2017\Projects\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LUIS ENRIQUE\Music\Documents\Visual Studio 2017\Projects\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Entities.dll
+C:\Users\LUIS ENRIQUE\Music\Documents\Visual Studio 2017\Projects\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Entities.pdb
+C:\Users\LUIS ENRIQUE\Music\Documents\Visual Studio 2017\Projects\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.xml
+C:\Users\LUIS ENRIQUE\Music\Documents\Visual Studio 2017\Projects\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LUIS ENRIQUE\Music\Documents\Visual Studio 2017\Projects\LiquorStore\LiqourStore.Persistence\obj\Debug\LiqourStore.Persistence.dll
+C:\Users\LUIS ENRIQUE\Music\Documents\Visual Studio 2017\Projects\LiquorStore\LiqourStore.Persistence\obj\Debug\LiqourStore.Persistence.pdb
+C:\Users\LUIS ENRIQUE\music\documents\visual studio 2017\Projects\LiquorStore\LiqourStore.Persistence\obj\Debug\LiqourStore.Persistence.Migrations.pepe.resources
+C:\Users\LUIS ENRIQUE\music\documents\visual studio 2017\Projects\LiquorStore\LiqourStore.Persistence\obj\Debug\LiquorStore.Persistence.csproj.GenerateResource.Cache
+D:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\obj\Debug\LiquorStore.Persistence.csprojResolveAssemblyReference.cache
+D:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\obj\Debug\LiqourStore.Persistence.dll
+D:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\obj\Debug\LiqourStore.Persistence.pdb
+D:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Persistence.dll.config
+D:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Persistence.dll
+D:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Persistence.pdb
+D:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.dll
+D:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.SqlServer.dll
+D:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Entities.dll
+D:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Entities.pdb
+D:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.xml
+D:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.SqlServer.xml
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Persistence.dll.config
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Persistence.dll
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Persistence.pdb
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.dll
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.SqlServer.dll
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Entities.dll
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Entities.pdb
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.xml
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.SqlServer.xml
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\obj\Debug\LiquorStore.Persistence.csprojResolveAssemblyReference.cache
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\obj\Debug\LiqourStore.Persistence.dll
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\obj\Debug\LiqourStore.Persistence.pdb
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\obj\Debug\LiqourStore.Persistence.Migrations.InitialModel.resources
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\obj\Debug\LiquorStore.Persistence.csproj.GenerateResource.Cache
+D:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\obj\Debug\LiqourStore.Persistence.Migrations.InitialModel.resources
+D:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Persistence\obj\Debug\LiquorStore.Persistence.csproj.GenerateResource.Cache
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Persistence.dll.config
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Persistence.dll
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Persistence.pdb
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.dll
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Entities.dll
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Entities.pdb
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.xml
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiqourStore.Persistence\obj\Debug\LiquorStore.Persistence.csprojResolveAssemblyReference.cache
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiqourStore.Persistence\obj\Debug\LiqourStore.Persistence.dll
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiqourStore.Persistence\obj\Debug\LiqourStore.Persistence.pdb
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiqourStore.Persistence\obj\Debug\LiqourStore.Persistence.Migrations.InitialModel.resources
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiqourStore.Persistence\obj\Debug\LiquorStore.Persistence.csproj.GenerateResource.Cache
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Persistence.dll.config
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Persistence.dll
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Persistence.pdb
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.dll
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Entities.dll
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Persistence\bin\Debug\LiqourStore.Entities.pdb
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.xml
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Persistence\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Persistence\obj\Debug\LiquorStore.Persistence.csprojResolveAssemblyReference.cache
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Persistence\obj\Debug\LiqourStore.Persistence.dll
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Persistence\obj\Debug\LiqourStore.Persistence.pdb
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Persistence\obj\Debug\LiqourStore.Persistence.Migrations.InitialModel.resources
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Persistence\obj\Debug\LiquorStore.Persistence.csproj.GenerateResource.Cache
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Persistence\obj\Debug\LiqourStore.Persistence.Migrations.SecondModel.resources

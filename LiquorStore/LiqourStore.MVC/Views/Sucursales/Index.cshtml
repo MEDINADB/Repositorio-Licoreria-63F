@@ -1,0 +1,40 @@
+﻿@model IEnumerable<LiqourStore.Entities.Sucursal>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Tienda.DireccionTienda)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DireccionSucursal)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tienda.DireccionTienda)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DireccionSucursal)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SucursalId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SucursalId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SucursalId })
+        </td>
+    </tr>
+}
+
+</table>

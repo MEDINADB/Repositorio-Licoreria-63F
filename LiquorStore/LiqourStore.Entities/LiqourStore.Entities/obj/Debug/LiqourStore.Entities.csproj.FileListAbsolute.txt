@@ -1,0 +1,22 @@
+C:\Users\LUIS ENRIQUE\music\documents\visual studio 2017\Projects\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\bin\Debug\LiqourStore.Entities.dll
+C:\Users\LUIS ENRIQUE\music\documents\visual studio 2017\Projects\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\bin\Debug\LiqourStore.Entities.pdb
+C:\Users\LUIS ENRIQUE\music\documents\visual studio 2017\Projects\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\obj\Debug\LiqourStore.Entities.csprojResolveAssemblyReference.cache
+C:\Users\LUIS ENRIQUE\music\documents\visual studio 2017\Projects\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\obj\Debug\LiqourStore.Entities.dll
+C:\Users\LUIS ENRIQUE\music\documents\visual studio 2017\Projects\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\obj\Debug\LiqourStore.Entities.pdb
+D:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\bin\Debug\LiqourStore.Entities.dll
+D:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\bin\Debug\LiqourStore.Entities.pdb
+D:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\obj\Debug\LiqourStore.Entities.dll
+D:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\obj\Debug\LiqourStore.Entities.pdb
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\bin\Debug\LiqourStore.Entities.dll
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\bin\Debug\LiqourStore.Entities.pdb
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\obj\Debug\LiqourStore.Entities.dll
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\obj\Debug\LiqourStore.Entities.pdb
+F:\PROGRA-RESPALDO\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\obj\Debug\LiqourStore.Entities.csprojResolveAssemblyReference.cache
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\bin\Debug\LiqourStore.Entities.dll
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\bin\Debug\LiqourStore.Entities.pdb
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\obj\Debug\LiqourStore.Entities.dll
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\obj\Debug\LiqourStore.Entities.pdb
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\bin\Debug\LiqourStore.Entities.dll
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\bin\Debug\LiqourStore.Entities.pdb
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\obj\Debug\LiqourStore.Entities.dll
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiqourStore.Entities\LiqourStore.Entities\obj\Debug\LiqourStore.Entities.pdb

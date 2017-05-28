@@ -1,0 +1,29 @@
+C:\Users\LUIS ENRIQUE\music\documents\visual studio 2017\Projects\LiquorStore\LiquorStore.Console\bin\Debug\LiquorStore.Console.exe.config
+C:\Users\LUIS ENRIQUE\music\documents\visual studio 2017\Projects\LiquorStore\LiquorStore.Console\bin\Debug\LiquorStore.Console.exe
+C:\Users\LUIS ENRIQUE\music\documents\visual studio 2017\Projects\LiquorStore\LiquorStore.Console\bin\Debug\LiquorStore.Console.pdb
+C:\Users\LUIS ENRIQUE\music\documents\visual studio 2017\Projects\LiquorStore\LiquorStore.Console\obj\Debug\LiqourStore.Console.csprojResolveAssemblyReference.cache
+C:\Users\LUIS ENRIQUE\music\documents\visual studio 2017\Projects\LiquorStore\LiquorStore.Console\obj\Debug\LiquorStore.Console.exe
+C:\Users\LUIS ENRIQUE\music\documents\visual studio 2017\Projects\LiquorStore\LiquorStore.Console\obj\Debug\LiquorStore.Console.pdb
+D:\PROGRA-RESPALDO\LiquorStore\LiquorStore.Console\bin\Debug\LiquorStore.Console.exe.config
+D:\PROGRA-RESPALDO\LiquorStore\LiquorStore.Console\bin\Debug\LiquorStore.Console.exe
+D:\PROGRA-RESPALDO\LiquorStore\LiquorStore.Console\bin\Debug\LiquorStore.Console.pdb
+D:\PROGRA-RESPALDO\LiquorStore\LiquorStore.Console\obj\Debug\LiqourStore.Console.csprojResolveAssemblyReference.cache
+D:\PROGRA-RESPALDO\LiquorStore\LiquorStore.Console\obj\Debug\LiquorStore.Console.exe
+D:\PROGRA-RESPALDO\LiquorStore\LiquorStore.Console\obj\Debug\LiquorStore.Console.pdb
+F:\PROGRA-RESPALDO\LiquorStore\LiquorStore.Console\bin\Debug\LiquorStore.Console.exe.config
+F:\PROGRA-RESPALDO\LiquorStore\LiquorStore.Console\bin\Debug\LiquorStore.Console.exe
+F:\PROGRA-RESPALDO\LiquorStore\LiquorStore.Console\bin\Debug\LiquorStore.Console.pdb
+F:\PROGRA-RESPALDO\LiquorStore\LiquorStore.Console\obj\Debug\LiquorStore.Console.exe
+F:\PROGRA-RESPALDO\LiquorStore\LiquorStore.Console\obj\Debug\LiquorStore.Console.pdb
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiquorStore.Console\bin\Debug\LiquorStore.Console.exe.config
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiquorStore.Console\bin\Debug\LiquorStore.Console.exe
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiquorStore.Console\bin\Debug\LiquorStore.Console.pdb
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiquorStore.Console\obj\Debug\LiqourStore.Console.csprojResolveAssemblyReference.cache
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiquorStore.Console\obj\Debug\LiquorStore.Console.exe
+C:\Users\LUIS ENRIQUE\Desktop\CARPETAS FIA\2017-1\PROGRAMACION 1\Entregable 3- SABADO 27\PROGRA-RESPALDO - copia2DOAVANCE\LiquorStore\LiquorStore.Console\obj\Debug\LiquorStore.Console.pdb
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiquorStore.Console\bin\Debug\LiquorStore.Console.exe.config
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiquorStore.Console\bin\Debug\LiquorStore.Console.exe
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiquorStore.Console\bin\Debug\LiquorStore.Console.pdb
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiquorStore.Console\obj\Debug\LiqourStore.Console.csprojResolveAssemblyReference.cache
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiquorStore.Console\obj\Debug\LiquorStore.Console.exe
+C:\Users\LUIS ENRIQUE\Desktop\3 avance progra\LiquorStore\LiquorStore.Console\obj\Debug\LiquorStore.Console.pdb

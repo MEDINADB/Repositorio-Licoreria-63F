@@ -1,0 +1,34 @@
+﻿@model IEnumerable<LiqourStore.Entities.Compra>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DescripcionCompra)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DescripcionCompra)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CompraId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CompraId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CompraId })
+        </td>
+    </tr>
+}
+
+</table>
